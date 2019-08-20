@@ -9,8 +9,7 @@ namespace ConsoleApp1
             Console.WriteLine("Hello World!");
             
             Func<int, int> square = x => x * x;
-            ;
-            //int y = Console.Read();
+
             Console.WriteLine(square(Convert.ToInt32("3")));
             Console.WriteLine(square(5));
 
@@ -60,7 +59,6 @@ namespace ConsoleApp1
             func6.Invoke();
             Console.WriteLine(func7.Invoke(1));
             Console.WriteLine(func8.Invoke());
-
 
         }
     }
