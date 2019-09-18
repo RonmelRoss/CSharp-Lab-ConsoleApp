@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Threading.Tasks;
 using Lambda;
-using Tasks;
 
 namespace ConsoleApp1
 {
@@ -11,10 +10,20 @@ namespace ConsoleApp1
         {
             Console.WriteLine("Hello World!");
 
+            // Lambda Class
             Lambdas lambda = new Lambdas();
             lambda.Run();
 
+            //Actions Class
             Actions.Listings();
+
+            // Tasker Class
+            Tasker.FirstRun();
+            Task second = Tasker.SecondRun();
+            second.Wait();
+
+            Tasker.ThirdRun();
+            Console.WriteLine(Tasker.FourthRun().Result);
         }
     }
 }
