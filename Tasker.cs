@@ -1,5 +1,6 @@
 using System;
 using System.Threading.Tasks;
+using System.Collections.Generic;
 
 class Tasker
 {
@@ -46,5 +47,16 @@ class Tasker
             return("Hi ho!");
         });
         return val;
+    }
+
+    public static void FifthRun()
+    {
+        string[] x = {"one", "two", null};
+        List<string> ls = new List<string>(x);
+        
+        foreach(string s in ls)
+        {
+            Console.WriteLine(s);
+        }
     }
 }

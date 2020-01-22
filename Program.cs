@@ -10,6 +10,8 @@ namespace ConsoleApp1
         {
             Console.WriteLine("Hello World!");
 
+            Tasker.FifthRun();
+
             // Lambda Class
             Lambdas lambda = new Lambdas();
             lambda.Run();
